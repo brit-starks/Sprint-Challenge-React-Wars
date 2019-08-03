@@ -21,12 +21,20 @@ const App = () => {
     axios.get('https://swapi.co/api/')
       .then(res => {
         console.log(res)
+        setFilms(res.data.films)
+        setPeople(res.data.people)
+        setPlanets(res.data.planets)
+        setSpecies(res.data.species)
+        setStarships(res.data.starships)
+        setVehicles(res.data.vehicles)
+        // console.log(films);
       })
   })
 
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      
     </div>
   );
 }
