@@ -2,8 +2,8 @@ import React from 'react';
 
 const Characters = (props) => {
   return (
-    <div style={{maxWidth: '100%', height: '100rem'}} className='characters'>
-      <div style={{margin: '15rem', color: 'blue',height: '5rem', display: 'flex', flexDirection: 'column'}} className='char-name'>
+    <div style={{maxWidth: '100%', maxHeight: '100%', display: 'flex', flexDirection: 'column'}} className='characters'>
+      {/* <div style={{margin: '15rem', color: 'blue',height: '5rem'}} className='char-name'>
         {props.character.map(characters => {
           return <h2>{characters.name}</h2>
         })}
@@ -25,7 +25,9 @@ const Characters = (props) => {
       {props.character.map(characters => {
           return <p>{characters.height}</p>
         })}
-      </div>
+      </div> */}
+
+       {/* <h2>Name: {props.character.name}</h2> */}
     </div>
   );
 }

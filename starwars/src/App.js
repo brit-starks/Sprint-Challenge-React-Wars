@@ -23,11 +23,15 @@ const App = () => {
       })
   }, []);
 
+  let sw = people.map(character => {
+    console.log(character)
+    return character;
+  })
+
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <Characters character={people} />
-      
+      <Characters character={sw} />
     </div>
   );
 }
