@@ -37,8 +37,8 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
       State is basically data held in memory, and is able to passed around to other components.
 
 - [ ] Describe props.
-
-      State that is passed around to child components are referred to as props.
+        State that is passed around to child
+       components are referred to as props.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
 
