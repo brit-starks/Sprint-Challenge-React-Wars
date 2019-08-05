@@ -9,23 +9,23 @@ import React from 'react';
         })}
       </div>
 
-       {/* <div className='char-birth-year'>
-      {props.character.map(characters => {
-          return <h3>{props.characters.birth_year}</h3>
+       <div className='char-birth-year'>
+      {props.char.map(characters => {
+          return <h3>{characters.birth_year}</h3>
         })}
       </div>
 
        <div className='char-gender'>
-      {props.character.map(characters => {
-          return <p>{props.characters.gender}</p>
+      {props.char.map(characters => {
+          return <p>{characters.gender}</p>
         })}
       </div>
 
        <div className='char-height'>
-      {props.character.map(characters => {
-          return <p>{props.characters.height}</p>
+      {props.char.map(characters => {
+          return <p>{characters.height}</p>
         })}
-      </div> */}
+      </div>
     </div>
   );
 }
