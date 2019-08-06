@@ -1,8 +1,10 @@
 import React from 'react';
+import StarCard from './StarCard';
 
  const Characters = (props) => {
   return (
     <div>
+    <StarCard />
       <div>
         {props.char.map(characters => {
           return (<h2>{characters.name}</h2>)

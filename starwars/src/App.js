@@ -3,6 +3,7 @@ import axios from 'axios';
 import Characters from './components/Characters';
 
 import './App.css';
+import StarCard from './components/StarCard';
 
 const App = () => {
 
@@ -14,20 +15,28 @@ const App = () => {
       .then(res => {
         console.log(res)
         setPeople(res.data.results)
-        console.log(res.data.results)
+        console.log('results: ', res.data.results)
       })
   }, []);
 
-  
-   people.map(character => {
-    console.log(character)
-    return character;
-  })
+  function renderCard (obj){
+    return <StarCard 
+    
+    name={obj.name}
+    birthYear={obj.birth_year}
+    gender={obj.gender}
+    height={obj.height}
+    key={obj.name}
+    
+    />
+  }
 
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <Characters char={people} />
+        {people.map(
+         renderCard
+         )}
     </div>
   );
 }
