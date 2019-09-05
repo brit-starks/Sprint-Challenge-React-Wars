@@ -1,4 +1,4 @@
-# Sprint Challenge: React - Star Wars
+# Sprint Challenge: React - Star Wars--Brittney Thomas
 
 This challenge allows you to practice the concepts and techniques learned over the past Sprint and apply them in a concrete project. This Sprint explored ReactJS, Function Components, component state and side effects. In your challenge for this Sprint, you will demonstrate proficiency by creating an application that uses ReactJS to consume live data retrieved from the World Wide Web and style that data nicely on the page.
 
@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+    React is A Javascript UI library that is based on creating components, for the ability of reusability (DRY code). React is used for managing complex and copious amounts of data.
+
 - [ ] What does it mean to _think_ in react?
+
+    Thinking in React is to think in all your code in components, and to know that React is 'reactive'.
 
 - [ ] Describe state.
 
+      State is basically data held in memory, and is able to passed around to other components.
+
 - [ ] Describe props.
+        State that is passed around to child
+       components are referred to as props.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+      Side effect is anything that happens outside of your code, that is caused inside your scope of code. To sync effects with state or prop changes you must use a dependency array adding the props or state you want effects to happen on.
 
 ## Project Set Up
 
